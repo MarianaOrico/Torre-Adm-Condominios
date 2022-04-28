@@ -1,0 +1,276 @@
+* {
+    --text-font: 'Varela Round', sans-serif;
+    margin: 0 auto;
+}
+
+body {
+    background-color: rgb(30, 30, 63);
+}
+
+.header {
+    background-color: rgb(30, 30, 63);
+    display: flex;
+    padding: 2rem;
+}
+
+.titleContainer {
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.titleContainer img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.titleContainer h1 {
+    font-weight: 200;
+    font-size: 140%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+}
+
+li {
+    display: inline-block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 20px;
+    padding-inline-start: 20px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(33, 27, 121);
+    transition: 0.3s all;
+}
+
+#acesse-a-sua-unidade-btn {
+    border: 2px solid rgb(33, 27, 121);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#acesse-a-sua-unidade-btn:hover {
+    background-color: rgb(33, 27, 121);
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caixa-banner,
+.proposta1,
+.apresentacao-torre, .nossos-servicos2 {
+    padding: 4%, 7%;
+}
+
+.caixa-banner {
+    background: url(./imagens/1.jpg);
+    background-position: center;
+    width: 100%;
+    height: 78vh;
+    text-align: flex-end;
+}
+
+.caixa-banner img {
+    width: 100%;
+    height: 120vh;;
+}
+
+
+.caixa-banner h2 {
+    color: black;
+    font: var(--text-font);
+    font-size: 3.5rem;
+    margin-top: -736px;
+    margin-left: 30px;
+}
+
+.apresentacao-torre {
+    background-color: rgb(231, 231, 231);
+}
+
+
+.apresentacao-torre h3 {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    margin-top: 50px;
+}
+
+.apresentacao-torre p{
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    padding: 60px 145px;
+}
+
+.apresentacao-torre img {
+    width: 140px;
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.nossos-servicos2 {
+    background-color: rgb(67, 67, 119);
+    padding: 48px 30px 17px 0px;
+}
+
+.nossos-servicos2 h3 {
+    font-size: 1.8rem;
+    margin-left: 90px;
+    color: rgb(224, 227, 230);
+}
+
+.adm, .fin, .pes, .onl, .out {
+    background-color: rgb(200, 203, 206);
+    margin: 33px 50px;
+    padding: 4px 24px;
+    border-radius: 19px;
+}
+
+.nossos-servicos2 li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 20px;
+    color: rgb(30, 30, 63);
+}
+
+.nossos-servicos2 p {
+    font-size: 18px;
+    margin: 0px 21px 30px 21px;
+    line-height: 27px;
+    color: rgb(30, 30, 63);
+}
+
+section {
+    width: 100%;
+    background-color: rgb(231, 231, 231);
+    padding: 4% 7%;
+}
+
+.proposta1 h4 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form [type=submit] {
+    height: 45px;
+    width: 15%;
+    background-color: rgb(33, 27, 121);
+    color: white;
+    font-weight: bold;
+}
+
+form [type=submit]:hover {
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    height: 27px;
+    width: 30%;
+    padding: 8px;
+    border-radius: 20px;
+    border: 2px solid rgb(30, 30, 63);
+    font-size: 15px;
+
+}
+
+footer {
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-align: center;
+    color: rgb(212, 212, 212);
+    line-height: 22px;
+}
+
+@media screen and (max-width:980px) {
+
+    html {
+        font-size: 1.rem;
+    }
+
+    .apresentacao-torre,
+    .proposta1, form,
+    .nossos-servicos2,
+    footer {
+        justify-content: center;
+        align-items: justify;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    html {
+        font-size: 0.75rem;
+    }
+
+    .titleContainer {
+        flex-direction: row;
+    }
+
+    .caixa-banner {
+        width: 100%;
+        margin-bottom: 3rem;
+
+    }
+
+    .apresentacao-torre,
+    .proposta1, form,
+    .nossos-servicos2,
+    footer {
+        justify-content: center;
+        align-items: justify;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:530px) {
+
+    .apresentacao-torre,
+    .proposta1, form,
+    .nossos-servicos2,
+    footer {
+        justify-content: center;
+        align-items: justify;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    html {
+        font-size: 0.6rem;
+    }
+}
